@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bella Cucina | Authentic Italian Restaurant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Bella Cucina</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#reservation">Reservation</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Bella Cucina</h1>
+    <p>Authentic Italian flavors, made fresh every day.</p>
+    <a href="#reservation" class="btn">Book a Table</a>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>Bella Cucina has been serving the community with handmade pasta, wood-fired pizza,
+     and family recipes passed down for generations. We believe great food brings people
+     together, and every dish is prepared with fresh, locally sourced ingredients.</p>
+</section>
+
+<section id="menu" class="menu">
+  <h2>Our Menu</h2>
+  <div class="menu-filters">
+    <button data-category="">All</button>
+    <button data-category="Starters">Starters</button>
+    <button data-category="Main Course">Main Course</button>
+    <button data-category="Desserts">Desserts</button>
+    <button data-category="Beverages">Beverages</button>
+  </div>
+  <div id="menu-list" class="menu-list">
+    <p class="loading">Loading menu...</p>
+  </div>
+</section>
+
+<section id="reservation" class="reservation">
+  <h2>Reserve a Table</h2>
+  <form id="reservation-form">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+    <input type="date" name="date" required>
+    <input type="time" name="time" required>
+    <input type="number" name="guests" placeholder="Number of Guests" min="1" required>
+    <textarea name="specialRequest" placeholder="Special requests (optional)"></textarea>
+    <button type="submit">Book Now</button>
+  </form>
+  <p id="reservation-message"></p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form id="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="contact-message"></p>
+  <div class="contact-info">
+    <p>📍 123 Main Street, Vijayawada, AP</p>
+    <p>📞 +91 98765 43210</p>
+    <p>✉️ hello@bellacucina.com</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Bella Cucina. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

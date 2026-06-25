@@ -1,0 +1,162 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #1b1b1b;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar .logo { font-size: 1.5rem; font-weight: bold; color: #e8b13c; }
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.navbar nav a:hover { color: #e8b13c; }
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.hero h1 { font-size: 3.5rem; margin-bottom: 10px; color: #e8b13c; }
+.hero p { font-size: 1.2rem; margin-bottom: 25px; }
+.btn {
+  background: #e8b13c;
+  color: #1b1b1b;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.btn:hover { background: #fff; }
+
+section {
+  padding: 60px 8%;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+  color: #1b1b1b;
+}
+
+.about p { max-width: 700px; margin: 0 auto; text-align: center; }
+
+.menu-filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.menu-filters button {
+  padding: 8px 18px;
+  border: 2px solid #e8b13c;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.menu-filters button:hover,
+.menu-filters button.active {
+  background: #e8b13c;
+  color: #1b1b1b;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.menu-item {
+  background: #faf6ee;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.menu-item h3 { color: #1b1b1b; margin-bottom: 6px; }
+.menu-item .price { color: #e8b13c; font-weight: bold; float: right; }
+.menu-item p.desc { font-size: 0.9rem; color: #555; margin-top: 6px; }
+.menu-item .category-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  background: #1b1b1b;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+.reservation, .contact { background: #1b1b1b; color: #fff; }
+.reservation h2, .contact h2 { color: #e8b13c; }
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+form input, form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+form button {
+  background: #e8b13c;
+  color: #1b1b1b;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+form button:hover { background: #fff; }
+
+#reservation-message, #contact-message {
+  text-align: center;
+  margin-top: 14px;
+  font-weight: 600;
+}
+
+.contact-info {
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #aaa;
+}
+
+.loading { text-align: center; color: #888; }
+
+@media (max-width: 600px) {
+  .navbar { flex-direction: column; gap: 10px; }
+  .hero h1 { font-size: 2.2rem; }
+}
